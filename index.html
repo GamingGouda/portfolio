@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gouda – Websites & Apps</title>
-<meta name="description" content="Portfolio of Gouda: interactive websites, desktop apps and tools.">
+<title>Hassan Gouda – Data &amp; ML Engineer</title>
+<meta name="description" content="Hassan Gouda – Data Engineer &amp; Machine Learning. Geospatial data pipelines, production ML, websites and apps.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -14,16 +14,36 @@
 <header class="top">
   <div class="wrap row">
     <a class="logo" href="#">Gouda<span>.</span></a>
-    <nav><a href="#work">Work</a><a href="#sensfish">SensFish</a><a href="#teyvat">Teyvat Live Map</a></nav>
+    <nav><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <p class="kicker">Websites · Desktop apps · Interactive tools</p>
+    <p class="kicker">Hassan Gouda · Data Engineer &amp; Machine Learning</p>
     <h1>I build things people<br><em>actually use.</em></h1>
-    <p class="lead">From a live marine-intelligence website with interactive data demos to a game overlay that tracks your position from the minimap: real projects, live and in use.</p>
-    <div class="actions"><a class="btn" href="#work">See the work ↓</a></div>
+    <p class="lead">Geospatial and satellite data pipelines, production ML models, and the websites and apps that put them in front of people. Real projects, live and in use.</p>
+    <div class="actions"><a class="btn" href="#work">See the work ↓</a><a class="btn ghost" href="Hassan_Gouda_CV.pdf" target="_blank" rel="noopener">Download CV</a></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <p class="tag">About</p>
+        <h2>Data &amp; ML engineer for earth-observation and real-time data</h2>
+        <p>I design and run large-scale geospatial and Earth Observation pipelines and applied machine learning, with 3+ years delivering production systems for international B2B clients.</p>
+        <p>I work with high-throughput batch and real-time streaming architectures (PySpark, Kafka, Apache Iceberg), and I've processed millions of multi-dimensional satellite records to power production XGBoost models.</p>
+        <p>I'm studying Computer Engineering at the German University in Cairo (expected 2027).</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Cairo, Egypt · GMT+2 (EU-overlap hours)</dd></div>
+        <div><dt>Work</dt><dd>Remote-ready · open to relocation</dd></div>
+        <div><dt>Experience</dt><dd>3+ years · 10+ production systems</dd></div>
+        <div><dt>Main stack</dt><dd>Python · SQL · PySpark · Kafka · XGBoost</dd></div>
+      </dl>
+    </div>
   </div>
 </section>
 
@@ -118,12 +138,107 @@
     </div>
   </section>
 
+  <!-- More data & ML projects -->
+  <section class="project" id="more">
+    <div class="wrap">
+      <div class="p-head">
+        <span class="num">03</span>
+        <div>
+          <p class="tag">Data &amp; machine learning</p>
+          <h2>More projects</h2>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="pcard">
+          <h3>Project Poseidon</h3>
+          <p class="sub">Real-time maritime intelligence platform</p>
+          <p>Streams live global AIS vessel traffic (1M+ messages/day) through Kafka into an Apache Iceberg lakehouse with Spark Structured Streaming, with effectively-once delivery verified by kill/restart recovery tests. A real-time anomaly detector and an XGBoost fishing-behaviour classifier (AIS gaps, loitering, rendezvous) are served from a Feast feature store via FastAPI onto a live map.</p>
+          <div class="chips"><span>Kafka</span><span>Spark Streaming</span><span>Iceberg</span><span>dbt</span><span>Feast</span><span>MLflow</span><span>FastAPI</span><span>Airflow</span></div>
+          <a class="more" href="https://github.com/GamingGouda/poseidon" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </article>
+        <article class="pcard">
+          <h3>TETR.IO Autonomous AI Bot</h3>
+          <p class="sub">Applied reinforcement learning</p>
+          <p>A custom headless Gymnasium environment with an 82-dimensional observation space, Dellacherie-style heuristics and one-step lookahead search, trained with MaskablePPO. A real-time OpenCV layer rebuilds the board from screen pixels and plays through precisely timed key presses, with no game API access.</p>
+          <div class="chips"><span>Python</span><span>OpenCV</span><span>Gymnasium</span><span>MaskablePPO</span></div>
+          <a class="more" href="https://github.com/GamingGouda/Tetrio-ml-bot" target="_blank" rel="noopener">View on GitHub ↗</a>
+        </article>
+        <article class="pcard">
+          <h3>Fatora</h3>
+          <p class="sub">SaaS backend &amp; database architecture</p>
+          <p>A production SaaS that connects to Egypt's Tax Authority (ETA) API for SME e-invoicing compliance, handling OAuth2 token lifecycles and secure document submission. Built on a 15-table PostgreSQL schema for invoices, clients and audit trails, with AES-256 encryption for credentials at rest.</p>
+          <div class="chips"><span>PostgreSQL</span><span>Supabase</span><span>OAuth2</span><span>AES-256</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<section class="cv" id="experience">
+  <div class="wrap">
+    <p class="tag">Background</p>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-when">2026 – Present</div>
+        <div>
+          <h3>ML &amp; Data Engineer · SensFish</h3>
+          <ul>
+            <li>Build and maintain scalable batch pipelines processing millions of multi-dimensional marine records daily from satellite and environmental sources (GeoPandas, Xarray, PySpark), with 5–10 minute end-to-end latency.</li>
+            <li>Integrate operational satellite feeds with spatial resampling, reprojection and temporal alignment, powering features for production XGBoost classifiers with over 95% accuracy.</li>
+            <li>Deploy and operate containerised inference services on cloud infrastructure for real-time environmental data streams.</li>
+            <li>Designed, built and deployed the company website: 8 bilingual pages with interactive product demos, self-hosted on nginx with HTTPS.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-when">2023 – Present</div>
+        <div>
+          <h3>Independent ML &amp; Data Engineer (Remote) · Global B2B clients</h3>
+          <ul>
+            <li>Architected and shipped 10+ production data and ML systems end to end, focused on geospatial, time-series and NLP workloads.</li>
+            <li>Designed Snowflake data models and dbt transformation layers for analytics dashboards and ML feature stores, orchestrated with Apache Airflow.</li>
+            <li>Deployed multi-tenant AI automation products with Kafka-driven event routing, cutting clients' manual processing from hours to minutes per day.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-when">Expected 2027</div>
+        <div>
+          <h3>B.Sc. Computer Engineering · German University in Cairo</h3>
+          <p class="muted">German-accredited. Coursework: Deep Learning for Computer Vision, Database Systems, Computer Architecture, Computer Graphics (OpenGL), Network Security.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="skills-h">Skills</h2>
+    <div class="skills">
+      <div><h4>Data Engineering</h4><p>PySpark · Spark Structured Streaming · Kafka · Apache Iceberg · Airflow · dbt · Snowflake · PostgreSQL · ETL/ELT design</p></div>
+      <div><h4>Machine Learning &amp; CV</h4><p>XGBoost · Scikit-learn · PyTorch · Hugging Face Transformers · MaskablePPO · Gymnasium · OpenCV · Pandas · NumPy</p></div>
+      <div><h4>GIS &amp; Earth Observation</h4><p>GeoPandas · Xarray · NetCDF4 · GeoTIFF · Rasterio · GDAL · Shapely · spatial joins · raster resampling · reprojection</p></div>
+      <div><h4>MLOps &amp; Cloud</h4><p>Docker · FastAPI · MLflow · Feast · Prometheus/Grafana · AWS · CI/CD · Supabase</p></div>
+      <div><h4>Languages</h4><p>Python (expert, 4+ yrs) · SQL (advanced) · JavaScript/TypeScript · HTML/CSS · C++ · C# .NET</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Let's work together</h2>
+    <p class="lead">Open to remote roles and freelance projects in data engineering, machine learning and web.</p>
+    <div class="actions">
+      <a class="btn" href="mailto:hassanebrahim33441277@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/hassan-gouda-ba40b3393" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn ghost" href="Hassan_Gouda_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </div>
+  </div>
+</section>
 
 <footer class="foot">
   <div class="wrap row">
-    <span>© 2026 Gouda</span>
-    <span class="muted">More projects coming soon.</span>
+    <span>© 2026 Hassan Gouda</span>
+    <span class="muted">Cairo, Egypt</span>
   </div>
 </footer>
 
