@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gouda – Websites & Apps</title>
+<meta name="description" content="Portfolio of Gouda: interactive websites, desktop apps and tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap row">
+    <a class="logo" href="#">Gouda<span>.</span></a>
+    <nav><a href="#work">Work</a><a href="#sensfish">SensFish</a><a href="#teyvat">Teyvat Live Map</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">Websites · Desktop apps · Interactive tools</p>
+    <h1>I build things people<br><em>actually use.</em></h1>
+    <p class="lead">From a live marine-intelligence website with interactive data demos to a game overlay that tracks your position from the minimap: real projects, live and in use.</p>
+    <div class="actions"><a class="btn" href="#work">See the work ↓</a></div>
+  </div>
+</section>
+
+<main id="work">
+
+  <!-- SensFish -->
+  <section class="project" id="sensfish">
+    <div class="wrap">
+      <div class="p-head">
+        <span class="num">01</span>
+        <div>
+          <p class="tag">Client website · 2026</p>
+          <h2>SensFish</h2>
+          <p class="sub">Real-time maritime risk & resilience intelligence</p>
+        </div>
+        <a class="btn ghost" href="https://sensfish.co.uk" target="_blank" rel="noopener">Visit live site ↗</a>
+      </div>
+
+      <div class="p-body">
+        <div class="p-text">
+          <p>A full redesign of SensFish's website: a dark, space-themed site that explains satellite and drone-based ocean intelligence to insurers, infrastructure owners, fisheries and investors.</p>
+          <p>Each application page has a hands-on demo with sample data, so visitors can try the platform instead of reading about it.</p>
+          <ul class="feats">
+            <li><b>5 interactive demos</b>: draw a survey area, scrub seagrass change over years, follow a vessel through fishing zones, inspect asset risk, watch the data pipeline</li>
+            <li><b>English & Spanish</b>, with a language switch on every page</li>
+            <li><b>Custom build</b>: hand-written HTML, CSS and JavaScript, no template</li>
+            <li><b>Deployed and run</b> on a cloud server with SSL, caching and redirects</li>
+          </ul>
+          <div class="chips"><span>HTML/CSS</span><span>JavaScript</span><span>SVG animation</span><span>i18n</span><span>nginx</span><span>Cloudflare</span></div>
+        </div>
+      </div>
+
+      <div class="browser" data-browser>
+        <div class="b-bar">
+          <i></i><i></i><i></i>
+          <div class="b-tabs" role="tablist">
+            <button class="on" data-src="https://sensfish.co.uk/">Home</button>
+            <button data-src="https://sensfish.co.uk/infrastructure.html">Infrastructure demo</button>
+            <button data-src="https://sensfish.co.uk/habitat.html">Seagrass demo</button>
+            <button data-src="https://sensfish.co.uk/fisheries.html">Vessel demo</button>
+            <button data-src="https://sensfish.co.uk/financial-markets.html">Asset risk demo</button>
+            <button data-src="https://sensfish.co.uk/how-we-do-it.html">How it works</button>
+            <button data-src="https://sensfish.co.uk/es/">Español</button>
+          </div>
+          <a class="b-open" href="https://sensfish.co.uk" target="_blank" rel="noopener" title="Open in new tab">↗</a>
+        </div>
+        <div class="b-view"><iframe title="SensFish live website" src="https://sensfish.co.uk/" loading="lazy"></iframe></div>
+      </div>
+      <p class="hint">This is the live website. Scroll and click inside it; the demos are fully interactive.</p>
+    </div>
+  </section>
+
+  <!-- Teyvat Live Map -->
+  <section class="project alt" id="teyvat">
+    <div class="wrap">
+      <div class="p-head">
+        <span class="num">02</span>
+        <div>
+          <p class="tag">Desktop app · 2026</p>
+          <h2>Teyvat Live Map</h2>
+          <p class="sub">An interactive Genshin Impact map that runs inside the game</p>
+        </div>
+        <a class="btn ghost" href="https://gaminggouda.github.io/teyvat-live-map/" target="_blank" rel="noopener">Download page ↗</a>
+      </div>
+
+      <div class="p-body">
+        <div class="p-text">
+          <p>A Windows app that sits on top of the game as an overlay. It finds where you are on the world map just by reading the in-game minimap, then shows nearby collectibles, targets and guides without leaving the game.</p>
+          <ul class="feats">
+            <li><b>Live position tracking</b>: image matching against the minimap, re-locates after teleports. No game-memory access.</li>
+            <li><b>Auto-marking</b>: reads pickups on screen with Windows' built-in text recognition and ticks them off</li>
+            <li><b>Targets on the minimap</b>, with edge arrows and distance for ones out of view</li>
+            <li><b>Every map</b>, including underground floors with a floor switcher</li>
+            <li><b>Progress sync</b>, custom hotkeys (keyboard and mouse), installer and download site</li>
+          </ul>
+          <div class="chips"><span>Electron</span><span>Overwolf</span><span>Leaflet</span><span>Computer vision</span><span>C# helpers</span><span>OCR</span></div>
+        </div>
+      </div>
+
+      <div class="gallery" data-gallery>
+        <figure class="g-main"><img src="img/teyvat-map-targets.jpg" alt="Teyvat Live Map: map with targeted items and marker details"><figcaption>Targets and marker details</figcaption></figure>
+        <div class="g-thumbs">
+          <button class="on" data-img="img/teyvat-map-targets.jpg" data-cap="Targets and marker details"><img src="img/teyvat-map-targets.jpg" alt=""></button>
+          <button data-img="img/teyvat-underground.jpg" data-cap="Underground floors"><img src="img/teyvat-underground.jpg" alt=""></button>
+          <button data-img="img/teyvat-map-switcher.jpg" data-cap="Switching between maps"><img src="img/teyvat-map-switcher.jpg" alt=""></button>
+          <button data-img="img/teyvat-sync-appsample.jpg" data-cap="Progress sync"><img src="img/teyvat-sync-appsample.jpg" alt=""></button>
+          <button data-img="img/teyvat-hotkeys.jpg" data-cap="Custom hotkeys"><img src="img/teyvat-hotkeys.jpg" alt=""></button>
+          <button data-img="img/teyvat-tutorial.jpg" data-cap="First-run tutorial"><img src="img/teyvat-tutorial.jpg" alt=""></button>
+          <button data-img="img/teyvat-ingame-minimap.jpg" data-cap="In-game minimap overlay" class="tall"><img src="img/teyvat-ingame-minimap.jpg" alt=""></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap row">
+    <span>© 2026 Gouda</span>
+    <span class="muted">More projects coming soon.</span>
+  </div>
+</footer>
+
+<script>
+// live-site browser tabs
+document.querySelectorAll('[data-browser]').forEach(function (b) {
+  var frame = b.querySelector('iframe'), open = b.querySelector('.b-open');
+  b.querySelectorAll('.b-tabs button').forEach(function (t) {
+    t.addEventListener('click', function () {
+      b.querySelectorAll('.b-tabs button').forEach(function (x) { x.classList.remove('on'); });
+      t.classList.add('on'); frame.src = t.dataset.src; open.href = t.dataset.src;
+    });
+  });
+  // show the site at desktop width, scaled to fit
+  var view = b.querySelector('.b-view');
+  function fit() {
+    var w = view.clientWidth, base = w < 700 ? w : 1280, s = w / base;
+    frame.style.width = base + 'px';
+    frame.style.height = (view.clientHeight / s) + 'px';
+    frame.style.transform = 'scale(' + s + ')';
+  }
+  fit(); addEventListener('resize', fit);
+});
+// screenshot gallery
+document.querySelectorAll('[data-gallery]').forEach(function (g) {
+  var img = g.querySelector('.g-main img'), cap = g.querySelector('.g-main figcaption');
+  g.querySelectorAll('.g-thumbs button').forEach(function (t) {
+    t.addEventListener('click', function () {
+      g.querySelectorAll('.g-thumbs button').forEach(function (x) { x.classList.remove('on'); });
+      t.classList.add('on'); img.src = t.dataset.img; cap.textContent = t.dataset.cap;
+      g.querySelector('.g-main').classList.toggle('contain', t.classList.contains('tall'));
+    });
+  });
+});
+</script>
+</body>
+</html>
